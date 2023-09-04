@@ -1,0 +1,127 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+    Enter number : <input type="text" id="t1"/> <br />
+
+    Enter number : <input type="text" id="t2" /> <br />
+
+    Result : <input type="text" id="t3" /> <br />
+
+    <input type="button"  onclick="add()" value="Add" />
+    <input type="button" onclick="Sub()" value="Sub"/>
+    <input type="button" onclick="Multi()" value="Multi" />
+    <input type="button" onclick="Devide()" value="Devide" />
+
+    <div id="dv"></div>
+    <script>
+
+        function add() {
+            var a = document.getElementById("t1").value;
+            var b = document.getElementById("t2").value;
+            var result = parseInt(a) + parseInt(b)
+            document.getElementById("t3").value = result;
+
+            document.getElementById("dv").innerHTML = "sum is " + result;
+
+        }
+        function Sub() {
+            var a = document.getElementById("t1").value;
+            var b = document.getElementById("t2").value;
+            var result = parseInt(a) - parseInt(b)
+            document.getElementById("t3").value = result;
+
+        }
+        function Multi() {
+            var a = document.getElementById("t1").value;
+            var b = document.getElementById("t2").value;
+            var result = parseInt(a) * parseInt(b)
+            document.getElementById("t3").value = result;
+
+        }
+        function Devide() {
+            var a = document.getElementById("t1").value;
+            var b = document.getElementById("t2").value;
+            var result = parseInt(a) // parseInt(b)
+            document.getElementById("t3").value = result;
+
+        }
+        //var a = 10;
+        //var b = 20;
+
+        //console.log(a + b);
+        //for (var i = 0; i < 10; i++)
+        //{
+        //    console.log(i);
+        //}
+
+        //function Addition() {
+        //    var a = 10, b = 20;
+        //    var c = a + b;
+        //    document.write(c);
+        //}
+
+        //// call a function
+        //Addition();
+
+
+        //function Sub(a, b) {
+        //    var c = a - b;
+        //    document.write("<br/>" + c);
+        //}
+
+        //Sub(35, 22);
+
+        //function Multiply(a, b) {
+        //    var c = a * b;
+        //    return c;
+        //}
+
+        //var result = Multiply(56, 12);
+        //document.write("<br/>" + result);
+
+
+        var names = ["pravin", "piyush", "kartik", "rishabh"];
+
+ //       names.push("pawan");
+ //       names.unshift("robin");
+
+ //       for (let i = 0; i < names.length; i++) {
+ //           document.write("<br/>" + names[i]);
+
+ //       }
+ //       document.writeln("<br/>");
+
+ //       names.pop();
+ //       names.shift();
+ //       for (let i = 0; i < names.length; i++) {
+ //           document.write("<br/>" + names[i]);
+ //       }
+ //       document.writeln("<br/>");
+ //;
+
+ //       names.splice(1, 2, "pawan", "mayur")
+ //       for (let i = 0; i < names.length; i++) {
+ //           document.write("<br/>" + names[i]);
+ //       }
+ //       document.writeln("<br/>");
+
+ //      var list2= names.slice(1, 4);
+
+ //       for (let i = 0; i < list2.length; i++) {
+ //           document.write("<br/>" + list2[i]);
+ //       }
+ //       document.writeln("<br/>");
+
+ //       names.reverse();
+ //       for (let i = 0; i < names.length; i++) {
+ //           document.write("<br/>" + names[i]);
+ //       }
+
+
+
+    </script>
+</body>
+</html>

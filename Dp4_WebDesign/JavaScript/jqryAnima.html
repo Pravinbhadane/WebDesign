@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animation</title>
+</head>
+ <body>
+    <button>Start Animation</button>
+    <div style="background-color:skyblue;height:100px;width:100px;position:relative;"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("div").animate({ left: '250px' }, 3000).animate({ left: '0px' }, 3000).slideUp(2000).
+                    slideDown(4000, function () {
+                        alert('Done')
+                    });
+                
+            });
+          
+        });
+    </script>
+
+
+
+</body>
+</html>

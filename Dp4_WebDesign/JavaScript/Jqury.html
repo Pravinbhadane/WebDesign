@@ -1,0 +1,32 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    Enter a Number : <input type="text" id="t1" /><br />
+    Enter a Name : <input type="text" id="t2" /> <br />
+    Result : <input type="text" id="t3" /> <br />
+    <input type="button" id="btn1" value="Addition" />
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+
+    <script>
+    $(document).ready(function () {
+
+            //val() text box madhun value read kraychi asel tr use hoto
+            //text() html element madhe data display and
+            //html() text sobt kahi additional tag gheycha asel tr  of jq
+            $("#btn1").click(function () {
+                var a = $("#t1").val();
+                var b = $("#t2").val();
+                var sum = parseInt(a) + parseInt(b);
+                $("#t3").val(sum);
+                $("#d1").text("Addition is " + sum);
+                $("#d2").html("<b>Addition is " + sum + "</b>");
+            })
+        });
+    </script>
+</body>
+</html>

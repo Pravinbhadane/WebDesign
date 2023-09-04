@@ -1,0 +1,78 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>CallBacks/Promises</title>
+</head>
+<body>
+
+    <div id="d2"></div>
+    <div id="d1"></div>
+    <script>
+
+        var student = [
+
+            { id: 1, name: "Kartik", branch:"CS"},
+            { id: 2, name: "Pravin", branch: "IT" },
+            { id: 3, name: "Piyush", branch: "CS" },
+            { id: 4, name: "Pawan", branch: "Mech" },
+            { id: 5, name: "Rishabh", branch: "CIVIL" },
+            { id: 6, name: "Ram", branch: "EE" }
+
+        ];
+
+        var data = "<table border='1'><tr><td>Id</td><td>Name</td><td>Branch</td></tr>";
+        for (var i = 0; i < student.length; i++) {
+            data += "<tr><td>" + student[i].id + "</td><td>" + student[i].name +
+                "</td><td>" + student[i].branch + "</td></tr>";
+        }
+        data += "</table>";
+        document.getElementById("d2").innerHTML = data;
+
+        //PROMISES
+
+        let promise = new Promise(function (resolve, reject) {
+            let req = new XMLHttpRequest();
+            req.open("GET", "https://jsonplaceholder.typicode.com/todos/");
+            req.onload = function () {
+                if (req.status == 200) { // status --> HTTP 
+                    resolve(req.response);
+                }
+                else {
+                    reject("Server error");
+                }
+            };
+            req.send();
+        }); // close
+
+
+        //call the promise
+
+
+        promise.then(function (value) {
+            display(value)
+        },
+            function (error) {
+                displayerror(error)
+            }
+        );
+
+
+        function display(value) {
+            var data = "<table border='1'><tr><td>User Id</td><td>Id</td><td>Title</td><td>Completed</td></tr>";
+            var result = JSON.parse(value);
+            for (var i = 0; i < result.length; i++) {
+                data += "<tr><td>" + result[i].userId + "</td><td>" + result[i].id + "</td><td>" +
+                    result[i].title + "</td><td>" + result[i].completed + "</td></tr>";
+            }
+            data += "</table>";
+            document.getElementById("d1").innerHTML = data;
+        }
+
+
+        function displayerror(error) {
+            document.getElementById("d1").innerHTML = error;
+        }
+
+    </script>
+
+</body>
+</html>

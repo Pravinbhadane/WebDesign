@@ -1,0 +1,25 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <button id="b1" value="Show"></button>
+    <button id="b2" value="Hide"></button>
+    <div>
+        This IS sample text
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#b1").click(function () {
+                $("div").hide();
+            })
+
+            $("#b2").click(function () {
+                $("div").show();
+            })
+        })
+    </script>
+</body>
+</html>

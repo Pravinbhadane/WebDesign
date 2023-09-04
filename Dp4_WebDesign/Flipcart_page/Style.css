@@ -1,0 +1,74 @@
+.navbar{
+    
+   padding-bottom:5px;
+   background-color:blue;
+ 
+}
+.nav-link{
+    color:white;
+}
+.img-div {
+    margin-top: 80px;
+}
+.btns{
+    margin-top:25px;
+    border:none;
+  
+}
+#add-btn{
+    color:#FFFFFF;
+    font: 16px roboto,arial,sans-serif;
+    padding: 16px 8px;
+    background-color:#FF9F00;
+    width:15%;
+}
+#buy-btn {
+    color: #FFFFFF;
+    font: 16px roboto,arial,sans-serif;
+    padding: 16px 8px;
+    background-color: #FB641B;
+    width: 15%;
+}
+#text-div{
+
+}
+#span1 {
+    font: 16px roboto,arial,sans-serif;
+    color: #212121;
+}
+.spn2 {
+    color: #2874F0;
+    font: 14px roboto,arial,sans-serif; 
+    font-weight:600;
+}
+.spn3 {
+    color: #388E3C;
+    font: 14px roboto,arial,sans-serif;
+    font-weight: 600;
+}
+#price {
+    font: 28px roboto,arial,sans-serif;
+    color: #212121;
+    font-weight: 700;
+}
+#price1 {
+    font-size: 16px;
+    margin-left: 12px;
+    vertical-align: middle;
+    color: #878787;
+}
+.spn5 {
+    color: #388E3C;
+    font: 16px roboto,arial,sans-serif;
+    font-weight: 600;
+}
+#offer {
+    font: 16px roboto,arial,sans-serif;
+    color: #212121;
+}
+.spn6{
+    margin-left:10px;
+}
+.fa{
+    color: green;
+}

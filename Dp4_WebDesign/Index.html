@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+
+<html >
+<head>
+ 
+    <title>First Page</title>
+    <style>
+        #d1{
+            background-color: aqua;
+            position:relative;
+            left: 30%;
+            top:10px;
+            align-items:center;
+
+        }
+        #d2{
+            background-color: blue;
+            position:absolute;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="d1">
+        <video height="400" controls>
+            <source src="movie.mp4" type="video/mp4">
+        </video>
+    </div>
+    <br />
+    <video height="400" controls style="align-content:center">
+        <source src="movie.mp4" type="video/mp4">
+    </video>
+
+    <div id="d2">
+        <p>
+            This is div 2
+        </p>
+    </div>
+
+    <div id="btndiv">
+        <button type="button" class="btn btn-primary">Primary</button>
+
+        <button type="button" class="btn btn-secondary">Secondary</button>
+
+        <button type="button" class="btn btn-success">Success</button>
+
+        <button type="button" class="btn btn-danger">Danger</button>
+
+        <button type="button" class="btn btn-warning">Warning</button>
+
+        <button type="button" class="btn btn-info">Info</button>
+
+        <button type="button" class="btn btn-light">Light</button>
+
+        <button type="button" class="btn btn-dark">Dark</button>
+
+        <button type="button" class="btn btn-link">Link</button>
+    </div>
+    <br />
+    <div class="btn-group">
+        <a href="#" class="btn btn-primary active" aria-current="page">Active link</a>
+        <a href="#" class="btn btn-primary">Link</a>
+        <a href="#" class="btn btn-primary">Link</a>
+    </div>
+
+    <h1>Example heading <span class="badge bg-primary">New</span></h1>
+    <h2>Example heading <span class="badge bg-secondary">New</span></h2>
+    <h3>Example heading <span class="badge bg-success">New</span></h3>
+    <h4>Example heading <span class="badge bg-secondary">New</span></h4>
+    <h5>Example heading <span class="badge bg-secondary">New</span></h5>
+    <h6>Example heading <span class="badge bg-secondary">New</span></h6>
+
+</body>
+</html>
